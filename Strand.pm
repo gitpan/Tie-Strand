@@ -6,7 +6,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw( @MAGICSTORE ) ] );
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(  );
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.01_02';
 
 # this package may be trying to do too much perhaps we should limit
 # it's functionality to strictly dealing with the normal and expanded
@@ -1233,7 +1233,7 @@ use warnings;
 
 require Exporter;
 use AutoLoader qw(AUTOLOAD);
-use Taowebs::Log qw(:all);
+use Log::Easy qw(:all);
 
 our @ISA = qw(Exporter);
 
